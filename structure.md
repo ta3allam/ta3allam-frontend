@@ -3,7 +3,7 @@
 # Ta3allam Frontend
 
 Welcome to the **Ta3allam frontend project**!
-This repository contains the user interface for **Ta3allam**, an educational platform inspired by Brightspace. It is designed to help students access course material, view schedules, and interact with instructors through a modern, mobile-friendly web interface.
+This repository contains the user interface for **Ta3allam**, a Syrian educational platform. It is designed to help students access course material, view schedules, and interact with instructors through a modern, mobile-friendly web interface.
 
 ---
 
