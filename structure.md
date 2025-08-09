@@ -1,5 +1,3 @@
-
-
 # Ta3allam Frontend
 
 Welcome to the **Ta3allam frontend project**!
@@ -24,7 +22,7 @@ The primary goals:
 
 * **Framework**: Next.js (React)
 * **Styling**: Tailwind CSS
-* **Auth**: Firebase Authentication (Google, Facebook, Email)
+* **Auth**: Auth0 (email-based only for MVP)
 * **Routing**: Next.js App Router
 * **State Management**: Zustand / React Context
 * **Localization**: i18n with full Arabic RTL support
@@ -43,16 +41,20 @@ The primary goals:
 
 ### 4. Frontend Architecture
 
-* **Login flow**: Firebase (Google, Facebook, Email)
+* **Login flow**: Auth0 (Email only)
+
 * **Dashboard**: Course cards, timetable, messages/notifications
+
 * **Course View**: Sticky sub-navbar with tabs:
 
   * Course Home (Announcements)
   * Content (Lessons & PDFs)
-  * Course Tools (Assignments, Quizzes, Groups, Discussions)
+  * Course Tools (Assignments, Groups, Discussions)
   * Classlist
   * Help
+
 * **Mobile Support**: View-only access on phones/tablets. Uploads and assignments restricted to desktop, like Brightspace.
+
 * **RTL support**: Arabic is the primary course language. All components must render correctly in RTL.
 
 ### 5. Development Workflow
@@ -60,22 +62,20 @@ The primary goals:
 * Agile sprints (2-week)
 * Feature branches via Git (`feat/`, `fix/`, `refactor/`)
 
-
 ### 6. Feature List (MVP)
 
-* [x] Firebase Auth (Google/Facebook/Email)
+* [x] Auth0 Email Auth (university-based domain only)
 * [x] Student dashboard
-* [x] Course joining & listing
-* [x] Timetable & deadlines
-* [x] Course-specific sub-nav
-* [x] View-only mobile layout
+* [x] Static course data + manual enrollment
+* [x] View-only course content (PDFs, posts)
+* [x] Notifications to admin for course submissions
 * [ ] Upload assignments (desktop only)
-* [ ] Quizzes & discussions UI
+* [ ] Groups & discussions UI
 
 #### 🧑‍🎓 Example User Stories
 
-* *As a student*, I want to log in with my Gmail account so that I can instantly access my enrolled courses.
-* *As a student*, I want to view my course announcements, deadlines, and materials in Arabic so that I can keep up with my studies easily.
+* *As a student*, I want to log in with my university email so that I can access my courses securely.
+* *As a student*, I want to view my course materials and deadlines in Arabic so I can follow my studies easily.
 
 ### 7. Contribution Guidelines
 
@@ -91,4 +91,3 @@ The primary goals:
 * **Hosting**: Vercel edge for low-latency in MENA region
 
 ---
-
